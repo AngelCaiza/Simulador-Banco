@@ -1,127 +1,101 @@
-# Proyecto de Gestión de Inventarios
+# Simulador de Banco - Tablas de Amortización
 
-Este proyecto es un sistema de gestión de inventarios desarrollado para la Universidad Técnica de Ambato. El sistema optimiza la administración de bienes tecnológicos y mobiliarios, proporcionando una solución eficiente y precisa para el seguimiento y control de inventarios.
+Este proyecto es un simulador bancario desarrollado para calcular y visualizar tablas de amortización. Está diseñado para ayudar a los usuarios a entender cómo se distribuyen sus pagos en créditos o préstamos, mostrando detalles como cuota fija, capital amortizado, intereses y saldo pendiente en cada periodo.
+
+El frontend fue desarrollado utilizando **Angular**, ofreciendo una interfaz moderna, dinámica y responsiva para la simulación.
+
+---
 
 ## Comenzando 🚀
 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-Mira **Despliegue** para conocer cómo desplegar el proyecto.
+---
 
 ### Pre-requisitos 📋
 
-Qué cosas necesitas para instalar el software y cómo instalarlas:
+- Node.js y Angular CLI instalados  
+- Navegador web moderno  
+- Servidor local como XAMPP/WAMP si se conecta a backend (PHP)  
+- MySQL si se guarda historial de simulaciones
 
-Node.js
-Angular CLI
-MySQL
-Git
-
+---
 
 ### Instalación 🔧
 
-Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo en funcionamiento:
-
 1. Clona el repositorio:
 
-git clone
+    git clone 
 
+2. Entra al directorio del frontend y ejecuta:
 
-2. Instala las dependencias del backend:
+    cd frontend  
+    npm install
 
-cd backend
-npm install
+3. Inicia la aplicación Angular:
 
+    ng serve
 
-3. Configura la base de datos MySQL:
+4. Accede a la aplicación en:
 
+    http://localhost:4200/
 
-CREATE DATABASE inventarios;
+5. Apis en php:
+   - Coloca los archivos del backend en `htdocs`.
+   - Configura `config.php` con los datos de conexión a la base de datos.
+   - Importa la base de datos con el archivo `.sql`.
 
+---
 
-4. Configura las variables de entorno del backend:
+## Uso básico 🖥️
 
-Crea un archivo `.env` en el directorio del backend con las configuraciones de tu base de datos.
+- Ingresa los datos del préstamo (monto, tasa de interés, plazo, tipo de sistema).
+- Selecciona el sistema de amortización: **Francés**, **Alemán**, etc.
+- Visualiza la tabla de amortización generada:
+  - Número de cuota  
+  - Valor de la cuota  
+  - Interés pagado  
+  - Capital amortizado  
+  - Saldo restante  
 
-5. Inicia el servidor del backend:
+---
 
-npm start
+## Funcionalidades principales ✨
 
+- Cálculo automático de cuotas según sistema de amortización seleccionado  
+- Generación y visualización de tabla de amortización  
+- Interfaz moderna y responsiva desarrollada con Angular  
+- Exportación o impresión de tablas  
+- Registro de simulaciones si se usa backend con base de datos
 
-6. Instala las dependencias del frontend:
+---
 
-cd frontend
-npm install
+## Tecnologías usadas 🛠️
 
+- **Angular** – Framework moderno de frontend  
+- **TypeScript** – Lenguaje de programación del frontend  
+- **HTML5** – Estructura  
+- **CSS3** – Estilos  
+- **JavaScript** – Interacciones  
+-  **PHP** – Backend para procesamiento  
+- **MySQL** – Almacenamiento de simulaciones  
 
-7. Inicia la aplicación Angular:
-
-ng serve
-
-
-Finaliza con un ejemplo de cómo obtener datos del sistema o cómo usarlos para una pequeña demo:
-
-Accede a http://localhost:4200 y usa las credenciales predeterminadas para iniciar sesión.
-
-
-## Ejecutando las pruebas ⚙️
-
-Explica cómo ejecutar las pruebas automatizadas para este sistema:
-
-### Pruebas end-to-end 🔩
-
-Explica qué verifican estas pruebas y por qué:
-
-ng e2e
-
-
-### Pruebas de estilo de codificación ⌨️
-
-Explica qué verifican estas pruebas y por qué:
-
-
-## Despliegue 📦
-
-Agrega notas adicionales sobre cómo hacer deploy:
-
-1. Construye el proyecto para producción:
-
-
-2. Sube los archivos generados a tu servidor web.
-
-## Construido con 🛠️
-
-Menciona las herramientas que utilizaste para crear tu proyecto:
-
-* [Angular](https://angular.io/) - Framework de frontend
-* [Node.js](https://nodejs.org/) - Entorno de ejecución para JavaScript
-* [MySQL](https://www.mysql.com/) - Base de datos relacional
-* [PrimeNG](https://www.primefaces.org/primeng/) - Biblioteca de componentes de UI
+---
 
 ## Contribuyendo 🖇️
 
-Por favor, lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta y el proceso para enviarnos pull requests.
+Por favor, lee el archivo [CONTRIBUTING.md](CONTRIBUTING.md) para conocer el código de conducta y cómo proponer mejoras.
 
-## Wiki 📖
-
-Puedes encontrar mucho más sobre cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki).
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+---
 
 ## Autores ✒️
 
-Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios:
-
-* **Colaborador(a)** - [David Flores](#nombreusuario)
-* **Colaborador(a)** - [Diego Pincha](#nombreusuario)
 * **Colaborador(a)** - [Angel Caiza](#nombreusuario)
-* **Colaborador(a)** - [Axel Vargas](#nombreusuario)
+* **Colaborador(a)** - [Alexis Poaquiza](#nombreusuario)
+* **Colaborador(a)** - [Mauricio Villafuerte](#nombreusuario)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/tu/proyecto/contributors) quienes han participado en este proyecto.
+---
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles.
-
+Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE.md](LICENSE.md) para más detalles.
