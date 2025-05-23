@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+<div class="container">
+    <!-- Panel izquierdo -->
+    <div class="left-panel">
+      
+      <h2>Verifica en tu navegador que estás en Banca Web.</h2>
+  
+
+  
+      <img src="https://bancaweb.pichincha.com/assets/main-image.svg" alt="Ilustración" class="illustration" />
+
+  
+      <p><strong>01.</strong> Cuida tu usuario y contraseña</p>
+      <p><strong>02.</strong> Antes de ingresar la Clave Digital verifica que los 4 últimos dígitos de tu cédula sean correctos.</p>
+    </div>
+  
+    <!-- Panel derecho -->
+    <div class="right-panel">
+      <h2>Bienvenido a tu Banca Web</h2>
+      <form>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" [(ngModel)]="usuario" placeholder="Ingresa tu usuario" />
+        <a href="#">¿Olvidaste tu usuario?</a>
+  
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" [(ngModel)]="contrasena" placeholder="Ingresa tu contraseña" />
+        <a href="#">¿Olvidaste tu contraseña?</a>
+  
+        <!--<button type="submit" (click)="navigateToClient()">Ingresar</button>-->
+        <button type="button" (click)="navigateToClient()">Ingresar</button>
+
+  
+        <div class="options">
+          <div class="option-box">
+            🔓 <br />
+            ¿Cuenta bloqueada?<br />
+            Desbloquéala aquí
+          </div>
+          <div class="option-box" (click)="goToRegister()" style="cursor: pointer;">
+            👤 <br />
+            ¿Usuario nuevo?<br />
+            Regístrate ahora
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  

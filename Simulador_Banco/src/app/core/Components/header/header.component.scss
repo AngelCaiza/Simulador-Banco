@@ -1,0 +1,37 @@
+
+
+::ng-deep .p-toolbar {
+    border: none;
+    border-radius: 0;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+}
+
+::ng-deep .btn-opciones .p-button {
+    background-color: transparent !important; 
+    color:#0e2258;
+    border: none;
+}
+
+::ng-deep .btn-opciones .p-button:hover{
+    
+    color: rgb(73, 73, 73) !important;
+    background-color: rgba(214, 214, 214, 0.685) !important;
+}
+
+::ng-deep .p-breadcrumb{
+    border: none;
+    border-radius: 0;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+
+
+
+
+
+
+::ng-deep .btn-acceso .p-button {
+    background-color: #fbdb04 !important; /* color de fondo deseado */
+    color: #0e2258 !important; /* color del texto */
+    border: none !important;
+}
